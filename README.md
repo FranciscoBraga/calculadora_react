@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+Aqui está um modelo de `README.md` para o código fornecido:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Calculator App
 
-## Available Scripts
+This is a simple calculator application built using React. The calculator supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Clear input functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Used to create interactive UI components and manage application state.
+- **Styled-components**: For styling the components in the application.
 
-### `npm test`
+## How to Run the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+### 1. Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/yourusername/calculator-app.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Navigate to the project directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd calculator-app
+```
 
-### `npm run eject`
+### 3. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have [Node.js](https://nodejs.org/) installed. Then, run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Run the application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+The app will run on `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Component Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. `App.js`
 
-### Code Splitting
+This is the main component where the logic for the calculator is handled. It contains state variables for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `currentNumber`: The current number displayed on the calculator.
+- `firstNumber`: The first operand used in arithmetic operations.
+- `operation`: The current arithmetic operation (`+`, `-`, `*`, `/`).
 
-### Analyzing the Bundle Size
+#### Key Functions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `handleOnClear`: Resets the calculator to its initial state.
+- `handleAddNumber`: Concatenates the clicked number to the `currentNumber`.
+- `handleSumNumber`: Performs addition.
+- `handleMinusNumber`: Performs subtraction.
+- `handleMultNumber`: Performs multiplication.
+- `handleDivNumber`: Performs division.
+- `handleEquals`: Executes the selected arithmetic operation and updates the display.
 
-### Making a Progressive Web App
+### 2. Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Input**: Displays the current value of the `currentNumber`.
+- **Button**: Represents the calculator buttons used to input numbers and operations.
+- **Container, Content, Row**: Styled components used for layout purposes.
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Once the application is running, you can use it as a simple calculator. Enter numbers and perform operations using the on-screen buttons. The app supports:
 
-### Deployment
+- **C**: Clears the current input.
+- **+**, **-**, **\***, **/**: Perform basic arithmetic operations.
+- **=**: Displays the result of the current operation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Future Improvements
 
-### `npm run build` fails to minify
+- Add support for more advanced operations (e.g., square root, exponentiation).
+- Improve error handling (e.g., division by zero).
+- Add keyboard support for input.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+Este `README.md` descreve as funcionalidades principais, estrutura de componentes, como rodar o projeto, e possíveis melhorias futuras. Você pode adaptá-lo conforme necessário.
